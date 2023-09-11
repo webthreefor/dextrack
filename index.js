@@ -1,7 +1,7 @@
 import { ethers } from "ethers";
 import ABI  from "./ABI.json";
 
-const provider = new ethers.JsonRpcProvider("https://mainnet.infura.io/v3/9004f0a3469b488ba52191d9756b8bc9");
+const provider = new ethers.JsonRpcProvider("https://mainnet.infura.io/v3/"YOUR_API_KEY");
 const contract  = new ethers.Contract("0x8fe15be3aadd30f78752001e6e38b846f2d195c0", ABI, provider);
 const tokenContract = new ethers.Contract("0x1bef0d587dde09d4cee9b13d4d38b5bec57a1397", ABI, provider);
 const wEthContract = new ethers.Contract ("0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2", ABI, provider);
